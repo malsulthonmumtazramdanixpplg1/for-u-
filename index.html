@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Spesial Untukmu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="heart-icon">❤️</div>
+    <h1 id="title">hii <span class="highlight">iann</span>...</h1>
+    
+    <div class="message-box">
+      <p id="typing-text"></p>
+    </div>
+
+    <!-- Pilihan Awalan -->
+    <div class="action-buttons" id="btn-group">
+      <button id="yesBtn" class="btn btn-yes">Mau Banget! 💕</button>
+      <button id="noBtn" class="btn btn-no">Enggak Dulu 😜</button>
+    </div>
+
+    <!-- Modal Video Kenangan (Sembunyi di awal) -->
+    <div id="videoModal" class="video-modal hidden">
+      <div class="video-content">
+        <h3>yakinn, lupa kita selucu ini??</h3>
+        <!-- Ganti 'kenangan.mp4' dengan nama file video kamu -->
+        <video id="memoryVideo" controls width="100%">
+          <source src="kenangan.mp4" type="video/mp4">
+          Browser kamu tidak mendukung pemutaran video.
+        </video>
+        <p class="video-subtext">Setidaknya kita pernah sebahagia ini...</p>
+        
+        <!-- Pilihan Babak Kedua Setelah Nonton Video -->
+        <div class="action-buttons-phase2">
+          <button id="yesBtn2" class="btn btn-yes">Yaudah, Mauuu! 💕</button>
+          <button id="noBtn2" class="btn btn-no-run">Tetep Enggak 🙈</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pesan Akhir (Mengarahkan ke WA) -->
+    <div id="successMessage" class="hidden">
+      <h2>Yayy! Momen Baru Dimulai 🎉</h2>
+      <p>Makasih ya udah kasih kesempatan lagi. Aku tunggu di WhatsApp ya!</p>
+      <a href="https://wa.me/628131125579" class="btn btn-wa" target="_blank">Chat Aku di WhatsApp 📱</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
